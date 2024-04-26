@@ -8,6 +8,7 @@ import { MoveRight } from "lucide-react";
 import Testimonials from '../components/Testimonials';
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -63,7 +64,7 @@ export default function Home() {
      
      </section>
      <section className="w-[100%] bg-[#003366]  py-16 ">
-
+      <Footer/>
      </section>
     </main>
   );
