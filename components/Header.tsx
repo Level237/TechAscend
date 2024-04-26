@@ -11,7 +11,7 @@ export default function Header() {
             src="/logo.png"
             width="60"
             height="60"
-            alt="logo agency cameroon"
+            alt="logo tech ascend cameroon"
             />
       
         </div>
