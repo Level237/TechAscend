@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className='bg-gradient-to-r from-blue-300 to-slate-50'>{children}</body>
     </html>
   );
 }
