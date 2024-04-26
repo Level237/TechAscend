@@ -4,7 +4,7 @@ import { X } from 'lucide-react'
 
 export default function CardRsv() {
   return (
-    <div className='bg-[#003366] h-[87px] mt-12 mb-16 flex justify-between px-10 items-center gap-3 '>
+    <div className='bg-[#003366] h-[87px] mt-12  flex justify-between px-10 items-center gap-3 '>
       <div className='flex justify-center items-center text-white gap-16'>
         <div>
           <span>Unlock Tech Riches in 2024</span>
