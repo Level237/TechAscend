@@ -1,10 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { Label } from './ui/label'
+import { Input } from './ui/input'
+import { Button } from './ui/button'
+import { Separator } from './ui/separator'
+import { FaFacebookF, FaThreads, FaTwitter, FaYoutube } from 'react-icons/fa6'
+import { BsInstagram, BsLinkedin } from 'react-icons/bs'
 
 export default function Footer() {
   return (
-    <div className='flex px-10 py-5 justify-between mx-[6rem]'>
+    <section>
+ <div className='flex px-10 py-5 justify-between mx-[6rem]'>
       <div className='w-56'>
       <Image 
             src="/logo.png"
@@ -122,5 +129,49 @@ export default function Footer() {
       </div>
       
     </div>
+    <div className='flex items-center flex-col gap-4 '>
+    
+    <div>
+        <div className='flex items-center gap-3'>
+        <Input type='email' placeholder='Your email'/>
+        <Button className='bg-[#ffcc00] px-12 rounded-full text-lg font-light text-black'>Subscribe</Button>
+        </div>
+   
+    </div>
+    <Separator className='bg-gray-600' />
+<div className='flex items-center gap-36 justify-between'>
+    <div className='flex items-center gap-3'>
+    <div>
+    <p className='text-white'>© 2024 TechAscend. All rights reserved.</p>
+</div>
+<div>
+    <span className='text-white'>Privacy Policy
+</span>
+</div>
+<div>
+    <span className='text-white'>Terms of Service
+</span>
+</div>
+<div>
+    <span className='text-white'>Cookies Preference
+</span>
+</div>
+<div>
+    <span className='text-white'>Cookies Policy
+</span>
+</div>
+    </div>
+<div className='flex gap-5 text-white mr-0'>
+<div><FaFacebookF/></div>
+<div><FaTwitter/></div>
+<div><BsLinkedin/></div>
+<div><BsInstagram/></div>
+<div><FaYoutube/></div>
+<div><FaThreads/></div>
+</div>
+</div>
+    </div>
+    </section>
+   
   )
 }
