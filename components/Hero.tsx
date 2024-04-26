@@ -5,10 +5,10 @@ import { Button } from './ui/button'
 export default function Hero() {
   return (
     <div>
-       <div className="flex justify-center mx-[3.2rem] mt-5">
+       <div className="flex justify-center  mt-5">
         <div className="w-[607px]">
             <h1 className="max-w-xl text-[#003366] font-extrabold mb-4 text-[2.3rem] leading-10">Nurturing Tech Potential: The TechAscend Experience</h1>
-            <p className="max-w-xl mb-6 mt-6  text-[#003366] text-[1.23rem] font-normal ">TechAscend empowers tech enthusiasts and professionals to excel in the rapidly evolving tech landscape. Our expert-led talks, hands-on workshops, and networking events are designed to foster innovation, skill development, and community engagement. Join us to transform your potential into success and be part of a community that values growth and achievement in the tech realm.</p>
+            <p className="max-w-xl mb-6 mt-6  text-[#003366] text-[1.3rem] font-normal ">TechAscend empowers tech enthusiasts and professionals to excel in the rapidly evolving tech landscape. Our expert-led talks, hands-on workshops, and networking events are designed to foster innovation, skill development, and community engagement. Join us to transform your potential into success and be part of a community that values growth and achievement in the tech realm.</p>
             
             <Button className="Learn more text-lg px-12 py-7 bg-[#003366] rounded-3xl" >Learn more</Button>
         </div>
