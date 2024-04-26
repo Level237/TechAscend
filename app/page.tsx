@@ -5,13 +5,15 @@ import { Button } from "@/components/ui/button";
 import CardRsv from "@/components/ui/card-rsv";
 import Value from "@/components/Value";
 import { MoveRight } from "lucide-react";
+import Testimonials from '../components/Testimonials';
+import Blog from "@/components/Blog";
 
 
 export default function Home() {
   return (
     <main className=" flex-col items-center ">
       <Header/>
-      <section className="mx-[3.2rem]">
+      <section className="mx-[3rem]">
       <Hero/>
       <CardRsv/>
       <div className="mt-36">
@@ -32,8 +34,32 @@ export default function Home() {
       </div>
      <Service/>
      </div>
+     <div className="mt-[5rem] mx-12">
+     <div className="text-center">
+      <h2 className="text-[#003366] text-4xl font-bold">
+        Our Testimonials
+        </h2>
+       
+      </div>
+      <Testimonials/>
+     </div>
+     <div className="mt-12 mr-12">
+     <div className="text-center">
+      <h2 className="text-[#003366] text-4xl font-bold">
+      Latest from Our Blog
+        </h2>
+       
+      </div>
+     <Blog/>
+     </div>
+
       </section>
-     
+     <section className="w-[100%] bg-gray-200 mt-8 max-h-64">
+      <div className="flex justify-center items-center flex-col">
+        <h2 className="text-[#003366] text-3xl mt-5 font-bold">Let’s Connect!</h2>
+        
+      </div>
+     </section>
     </main>
   );
 }
