@@ -7,6 +7,7 @@ import Value from "@/components/Value";
 import { MoveRight } from "lucide-react";
 import Testimonials from '../components/Testimonials';
 import Blog from "@/components/Blog";
+import Contact from "@/components/Contact";
 
 
 export default function Home() {
@@ -54,11 +55,15 @@ export default function Home() {
      </div>
 
       </section>
-     <section className="w-[100%] bg-gray-200 mt-8 max-h-64">
+     <section className="w-[100%] bg-gray-200 mt-8  py-16 ">
       <div className="flex justify-center items-center flex-col">
         <h2 className="text-[#003366] text-3xl mt-5 font-bold">Let’s Connect!</h2>
-        
+        <Contact/>
       </div>
+     
+     </section>
+     <section className="w-[100%] bg-[#003366]  py-16 ">
+
      </section>
     </main>
   );
