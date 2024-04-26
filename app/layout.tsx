@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className='bg-gradient-to-r from-blue-300 to-slate-50'>{children}</body>
+      <body className='bg-gradient-to-r from-blue-300 to-slate-50'>
+      <main className=" flex-col items-center ">
+        <Header/>
+        
+        {children}
+        <section className="w-[100%] bg-[#003366]  py-16 ">
+      <Footer/>
+     </section>
+        </main>
+        </body>
     </html>
   );
 }

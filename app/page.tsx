@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className=" flex-col items-center ">
-      <Header/>
+      
       <section className="mx-[3rem]">
       <Hero/>
       <CardRsv/>
@@ -63,9 +63,7 @@ export default function Home() {
       </div>
      
      </section>
-     <section className="w-[100%] bg-[#003366]  py-16 ">
-      <Footer/>
-     </section>
+     
     </main>
   );
 }
