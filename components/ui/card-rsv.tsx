@@ -1,14 +1,16 @@
+"use client"
 import React from 'react'
 import { Button } from './button'
 import { X } from 'lucide-react'
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch, useSelector } from 'react-redux';
 import { hidden } from '@/store/store';
 
 export default function CardRsv() {
   const isVisible = useSelector((state:any) => state.RsvpSlice.isVisible);
   const dispatch = useDispatch();
   return (
-    <div className='bg-[#003366] h-[87px] mt-12  flex justify-between px-10 items-center gap-3 '>
+    <>
+    {isVisible && (<div className='bg-[#003366] h-[87px] mt-12  flex justify-between px-10 items-center gap-3 '>
       <div className='flex justify-center items-center text-white gap-16'>
         <div>
           <span>Unlock Tech Riches in 2024</span>
@@ -26,6 +28,8 @@ export default function CardRsv() {
       <div className='text-white cursor-pointer'>
         <X onClick={() => dispatch(hidden())}/>
       </div>
-    </div>
+    </div>)}
+     </>
+   
   )
 }

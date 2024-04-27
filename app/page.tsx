@@ -12,11 +12,13 @@ import Footer from "@/components/Footer";
 
 
 export default function Home() {
+  
   return (
     <main className=" flex-col items-center  ">
       
       <section className="mx-[3rem]">
       <Hero/>
+      
       <CardRsv/>
       <div className="mt-36">
        <div className="flex justify-center">

@@ -14,7 +14,7 @@ const RsvpSlice = createSlice({
 
   const store = configureStore({
     reducer: {
-      rsvpSlice: RsvpSlice.reducer, // Ajoutez votre slice ici
+        RsvpSlice: RsvpSlice.reducer, // Ajoutez votre slice ici
     },
   });
 
