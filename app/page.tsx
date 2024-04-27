@@ -10,13 +10,17 @@ import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import StartedBloc from "@/components/StartedBloc";
+import store from "@/store/store";
+import Modal from "@/components/Modal";
 
 
 export default function Home() {
-  
+  const s=store;
+  const isVisible=s.getState().StartedSlice.isVisible;
   return (
     <main className=" flex-col items-center  ">
-      <StartedBloc/>
+      
+      <Modal/>
       <section className="mx-[3rem]">
       <Hero/>
       

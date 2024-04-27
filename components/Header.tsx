@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
 import { useDispatch } from 'react-redux';
-import { hide } from '@/store/store';
+import { open } from '@/store/store';
 
 export default function Header() {
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ export default function Header() {
         <li>About us</li>
         <li>Contact Us</li>
         <li>
-          <Button onClick={()=>dispatch(hide())} className='bg-transparent text-base border-white border-[1px] rounded-2xl px-7' >Get Started</Button>
+          <Button onClick={()=>dispatch(open())} className='bg-transparent text-base border-white border-[1px] rounded-2xl px-7' >Get Started</Button>
         </li>
         <li>Login</li>
       </ul>
