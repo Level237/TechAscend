@@ -46,7 +46,14 @@ const Modal=()=>{
                 <div>
                     
                 </div>
+                <motion.div 
+                initial={{ opacity:0}}
+                animate={{opacity:1 }}
+                
+                >
                 <Button className=" bg-[#003366] py-8 flex flex-col"><div className="text-2xl">I Want to hire Talents</div><div>I{`'`} ready to build my team.</div></Button>
+                </motion.div>
+                
                 <Button className="bg-[#003366] py-8 flex flex-col mt-5"><div className="text-2xl">I Want a remote worker</div><div>I{`'`} ready to find a remote opportunity.</div></Button>
                 <Button className="bg-[#003366] py-8 flex flex-col mt-5"><div className="text-2xl">I Want to learn new skills</div><div>I{`'`} ready to enchance my capabilities.</div></Button>
             </div>
