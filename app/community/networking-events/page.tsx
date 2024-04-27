@@ -2,16 +2,22 @@ import { Button } from '@/components/ui/button'
 import { MoveRight, NotebookText, Timer } from 'lucide-react'
 import React from 'react'
 import { WiDayFog } from 'react-icons/wi'
-
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 export default function page() {
   return (
-    <div className='bg-white'>
+    <div className='bg-white pb-10'>
       <section className={`relative mx-10 h-[68vh] bg-center bg-cover bg-[url('/mentor.webp')] `}>
-        <div className="flex items-center  justify-center absolute inset-0 bg-[#003366] w-100 opacity-[0.7]">
+        <div className="flex items-center  justify-center absolute inset-0 bg-[#003366] w-100 opacity-[0.9]">
           
         </div>
         <div className="absolute inset-0 flex items-center flex-col gap-5 justify-center">
         <h2 className="text-2xl text-white font-bold"> Unlock Tech Riches in 2024</h2>
+        
         <div>
           <h2 className='text-white text-xl'>Join Ascend Talk 24.0: Unveil the Highest Earning Careers in Tech!</h2>
         </div>
@@ -31,11 +37,29 @@ export default function page() {
         </div>
         
         </section>
-        <section className='mx-60 mt-5 border-[#00000075] pb-24 border rounded-xl '>
+        <section className='mx-60 mt-5 border-[#00000075] pb-24 mb-24 border rounded-xl '>
         <div className='mt-5'>
-          <h2 className="text-black text-3xl font-bold text-center">Past Events</h2>
+          <h2 className="text-black text-3xl font-bold text-center">Events</h2>
         </div>
-        <div className='mt-5 flex items-center justify-center'>
+        <div className='flex flex-col items-center mx-36 justify-center'>
+        <Accordion type="single" collapsible className="w-full">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>Recents Events</AccordionTrigger>
+        <AccordionContent>
+         Not Available
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>March</AccordionTrigger>
+        <AccordionContent>
+         Not Available
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger> February</AccordionTrigger>
+        <AccordionContent>
+        <div className='flex justify-center'>
+          
           <div className=''>
             <NotebookText className='text-3xl'/>
           </div>
@@ -53,6 +77,21 @@ export default function page() {
           </div>
           <h2 className="text-[#003366] font-bold text-sm text-center">14:00:00 GMT+0100 (West Africa Standard Time)</h2>
         </div>
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-4">
+        <AccordionTrigger> January</AccordionTrigger>
+        <AccordionContent>
+          Not Available
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+
+    <div className='mt-5'>
+<Button className='bg-[#003366]'>More Events</Button>
+    </div>
+        </div>
+        
         </section>
        
     </div>
