@@ -1,5 +1,6 @@
 import { configureStore,createSlice } from '@reduxjs/toolkit';
 
+
 const RsvpSlice = createSlice({
     name: 'rsvp',
     initialState: {
@@ -12,12 +13,26 @@ const RsvpSlice = createSlice({
     },
   });
 
-  const store = configureStore({
-    reducer: {
-        RsvpSlice: RsvpSlice.reducer, // Ajoutez votre slice ici
+  const StartedSlice=createSlice({
+    name: 'start',
+    initialState: {
+      isVisible: true,
+    },
+    reducers: {
+      hide: (state) => {
+        state.isVisible =!state.isVisible;
+      },
     },
   });
 
-  export const { hidden } = RsvpSlice.actions; // Exportez les actions
+  const store = configureStore({
+    reducer: {
+        RsvpSlice: RsvpSlice.reducer,
+        StartedSlice:StartedSlice.reducer
+    },
+  });
+
+  export const { hidden } = RsvpSlice.actions;
+  export const { hide } = StartedSlice.actions;
 
 export default store;

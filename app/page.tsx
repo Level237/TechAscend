@@ -9,13 +9,14 @@ import Testimonials from '../components/Testimonials';
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import StartedBloc from "@/components/StartedBloc";
 
 
 export default function Home() {
   
   return (
     <main className=" flex-col items-center  ">
-      
+      <StartedBloc/>
       <section className="mx-[3rem]">
       <Hero/>
       

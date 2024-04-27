@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import store from "@/store/store";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,9 +15,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+ 
   return (
     <html lang="en">
-      <body className=''>
+      <body className={``}>
       <main className=" flex-col items-center bg-gradient-to-r from-blue-300 to-slate-50 ">
       <Provider store={store}>
         <Header/>

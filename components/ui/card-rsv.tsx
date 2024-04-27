@@ -13,6 +13,9 @@ export default function CardRsv() {
     <>
     <AnimatePresence>
     {isVisible && (<motion.div
+    initial={{ opacity:0}}
+    animate={{opacity:1 }}
+    transition={{ duration:1.5 }}
     exit={{ opacity:0, transition: {duration: 0.5}}}
     className='bg-[#003366] h-[87px] mt-12  flex justify-between px-10 items-center gap-3 '>
       <div className='flex justify-center items-center text-white gap-16'>
