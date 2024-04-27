@@ -22,13 +22,13 @@ export default function Service() {
       <CardContent>
       <div className='flex flex-col mt-2 gap-2'>
             <div>
-                <h2 className='text-black text-lg font-bold'>Skill Workshops</h2>
+                <h2 className='text-black text-xl font-bold'>Ascend Talks</h2>
             </div>
             <div>
-                <span>Hands-on workshops to enhance your skills and knowledge.</span>
+                <span className='text-gray-600'>Gain insights from industry experts and stay ahead in the tech world.</span>
             </div>
             <div>
-            <Button className="flex gap-2" variant="ghost">See more<MoveRight/></Button>
+            <Button className="flex gap-2 text-[#003366] font-bold text-lg" variant="ghost">See more<MoveRight/></Button>
             </div>
        </div>
       </CardContent>
@@ -43,15 +43,15 @@ export default function Service() {
        
       </CardHeader>
       <CardContent>
-       <div className='flex flex-col mt-2 gap-2'>
+      <div className='flex flex-col mt-2 gap-2'>
             <div>
-                <h2 className='text-black text-lg font-bold'>Skill Workshops</h2>
+                <h2 className='text-black text-xl font-bold'>Skill Workshops</h2>
             </div>
             <div>
-                <span>Hands-on workshops to enhance your skills and knowledge.</span>
+                <span className='text-gray-600'>Hands-on workshops to enhance your skills and knowledge.</span>
             </div>
             <div>
-            <Button className="flex gap-2" variant="ghost">See more<MoveRight/></Button>
+            <Button className="flex gap-2 text-[#003366] font-bold text-lg" variant="ghost">See more<MoveRight/></Button>
             </div>
        </div>
       </CardContent>
@@ -68,13 +68,13 @@ export default function Service() {
       <CardContent>
       <div className='flex flex-col mt-2 gap-2'>
             <div>
-                <h2 className='text-black text-lg font-bold'>Skill Workshops</h2>
+                <h2 className='text-black text-xl font-bold'>Networking Events</h2>
             </div>
             <div>
-                <span>Hands-on workshops to enhance your skills and knowledge.</span>
+                <span className='text-gray-600'>Connect with fellow developers and expand your professional network.</span>
             </div>
             <div>
-            <Button className="flex gap-2" variant="ghost">See more<MoveRight/></Button>
+            <Button className="flex gap-2 text-[#003366] font-bold text-lg" variant="ghost">See more<MoveRight/></Button>
             </div>
        </div>
       </CardContent>
@@ -91,13 +91,13 @@ export default function Service() {
       <CardContent>
       <div className='flex flex-col mt-2 gap-2'>
             <div>
-                <h2 className='text-black text-lg font-bold'>Skill Workshops</h2>
+                <h2 className='text-black text-xl font-bold'>Mentorship Program</h2>
             </div>
             <div>
-                <span>Hands-on workshops to enhance your skills and knowledge.</span>
+                <span className='text-gray-600'>Get guidance from experienced mentors in the tech industry.</span>
             </div>
             <div>
-            <Button className="flex gap-2" variant="ghost">See more<MoveRight/></Button>
+            <Button className="flex gap-2 text-[#003366] font-bold text-lg" variant="ghost">See more<MoveRight/></Button>
             </div>
        </div>
       </CardContent>
