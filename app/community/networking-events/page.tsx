@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
-import { MoveRight } from 'lucide-react'
+import { MoveRight, NotebookText, Timer } from 'lucide-react'
 import React from 'react'
+import { WiDayFog } from 'react-icons/wi'
 
 export default function page() {
   return (
@@ -30,9 +31,30 @@ export default function page() {
         </div>
         
         </section>
+        <section className='mx-60 mt-5 border-[#00000075] pb-24 border rounded-xl '>
         <div className='mt-5'>
-          <h2 className="text-black text-3xl font-bold text-center">Upcoming Events</h2>
+          <h2 className="text-black text-3xl font-bold text-center">Past Events</h2>
         </div>
+        <div className='mt-5 flex items-center justify-center'>
+          <div className=''>
+            <NotebookText className='text-3xl'/>
+          </div>
+          <h2 className="text-[#003366] font-bold text-xl text-center">Unlock Tech Riches in 2024</h2>
+        </div>
+        <div className='flex items-center justify-center'>
+          <div className=''>
+            <WiDayFog className='text-3xl'/>
+          </div>
+          <h2 className="text-[#003366] font-bold text-sm text-center">03 Feb 2024 </h2>
+        </div>
+        <div className='flex items-center justify-center'>
+          <div className=''>
+            <Timer className='text-3xl'/>
+          </div>
+          <h2 className="text-[#003366] font-bold text-sm text-center">14:00:00 GMT+0100 (West Africa Standard Time)</h2>
+        </div>
+        </section>
+       
     </div>
   )
 }
