@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 
 export default function Header() {
   return (
-    <header className="w-[100%] sticky  z-[30] bg-transparent backdrop-blur   border-b-[0.1px]  border-[#5134173a] top-0  py-4 px-4 sm:px-10 dark:bg-transparent  bg-[#003366]  font-[sans-serif] min-h-[90px]">
+    <header className="w-[100%] sticky  z-[30]    border-b-[0.1px]  border-[#5134173a] top-0  py-4 px-4 sm:px-10 dark:bg-transparent  bg-[#003366]  font-[sans-serif] min-h-[90px]">
       <section className="flex fle flex-wrap items-center gap-x-2 max-lg:gap-y-6 justify-between">
       <div className="w-[180px]">
             <Image 

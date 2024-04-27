@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className='bg-gradient-to-r from-blue-300 to-slate-50'>
-      <main className=" flex-col items-center ">
+      <body className=''>
+      <main className=" flex-col items-center bg-gradient-to-r from-blue-300 to-slate-50 ">
         <Header/>
         
         {children}
