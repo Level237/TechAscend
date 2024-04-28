@@ -23,15 +23,54 @@ export default function Header() {
         <div className='flex-1'>
       <ul className='flex  max-lg:hidden text-white text-[1rem] gap-[3rem] cursor-pointer items-center'>
         <li className='group' ><MenuLink title={'home'} link={''} isCaret={false}/></li>
-        <li><MenuLink title={'Community'} link={''} isCaret={true} sub={['Skill Workshops','Networking Events','Job Fairs']}/></li>
-        <li><MenuLink title={'Programs'} link={''} isCaret={true} sub={['Frontend','Backend','DevOps', 'Data Science']}/></li>
-        <li> <MenuLink title={'Career Readliness'} link={''} isCaret={true} sub={['Jobs','Mentorship Programs','Career Placement']}/></li>
+        <li><MenuLink title={'Community'} link={''} isCaret={true} sub={[{
+          title: 'Skill Workshops', link: 'https://tech-ascend.com/community/skill-Workshops',
+          isBlank: 1
+        },{
+          title: 'Networking Events', link: 'community/networking-events',
+          isBlank: 0
+        },{
+          title: 'Job Fairs', link: 'https://tech-ascend.com/community/job-fairs',
+          isBlank: 1
+        }]}/></li>
+        <li><MenuLink title={'Programs'} link={''} isCaret={true} sub={[{
+          title: 'Frontend', link: 'https://tech-ascend.com/programs/front-end',
+          isBlank: 1
+        },{
+          title: 'Backend', link: 'https://tech-ascend.com/programs/back-end',
+          isBlank: 1
+        },{
+          title: 'DevOps', link: 'https://tech-ascend.com/programs/devops',
+          isBlank: 1
+        },{
+          title: 'Data Science', link: 'https://tech-ascend.com/programs/data-science',
+          isBlank: 1
+        }]}/></li>
+        <li> <MenuLink title={'Career Readliness'} link={''} isCaret={true} sub={[{
+          title: 'Jobs', link: 'https://tech-ascend.com/career/jobs',
+          isBlank: 1
+        },{
+          title: 'Mentorship Programs', link: 'https://tech-ascend.com/career/mentorship-programs',
+          isBlank:1
+        },{
+          title: 'Career Placement', link: 'https://tech-ascend.com/career/career-placement',
+          isBlank: 1
+        }]}/></li>
         <li> <MenuLink title={'About us'} link={''} isCaret={false}/></li>
         <li> <MenuLink title={'Contact Us'} link={''} isCaret={false}/></li>
         <li>
           <Button onClick={()=>dispatch(open())} className='bg-transparent text-base border-white border-[1px] rounded-2xl px-7' >Get Started</Button>
         </li>
-        <li><MenuLink title={'Login'} link={''} isCaret={true} sub={['For Clients','For Talents','For Students']}/></li>
+        <li><MenuLink title={'Login'} link={''} isCaret={true} sub={[{
+          title: 'For Clients', link: '',
+          isBlank: 0
+        },{
+          title: 'For Talents', link: '',
+          isBlank: 0
+        },{
+          title: 'For Students', link: '',
+          isBlank: 0
+        }]}/></li>
       </ul>
        </div>
        <div>
