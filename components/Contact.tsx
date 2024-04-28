@@ -6,7 +6,7 @@ import { Button } from './ui/button'
 
 export default function Contact() {
   return (
-    <div className='mt-3 bg-white w-[38rem] px-5 py-7 rounded-2xl'>
+    <div className='mt-3 bg-white w-[38rem] max-sm:w-full px-5 py-7 rounded-2xl'>
         <form action="">
 
             <div className='flex flex-col gap-2 mb-5'>

@@ -66,7 +66,7 @@ export default function Home() {
      </div>
 
       </section>
-     <section className="w-[100%] bg-gray-200 mt-8  py-16 ">
+     <section className="w-[100%] bg-gray-200  mt-8  py-16 ">
       <div className="flex justify-center items-center flex-col">
         <h2 className="text-[#003366] text-3xl mt-5 font-bold">Let’s Connect!</h2>
         <Contact/>
