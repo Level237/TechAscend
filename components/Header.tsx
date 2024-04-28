@@ -3,13 +3,14 @@ import React from 'react'
 import { Button } from './ui/button'
 import { useDispatch } from 'react-redux';
 import { open } from '@/store/store';
+import MenuLink from './ui/menu-link';
 
 export default function Header() {
   const dispatch = useDispatch();
   return (
     <>
-    <header className="w-[100%] sticky  z-[30]    border-b-[0.1px]  border-[#5134173a] top-0  py-4 px-4 sm:px-10 dark:bg-transparent  bg-[#003366]  font-[sans-serif] min-h-[90px]">
-      <section className="flex  flex-wrap items-center gap-x-2 max-lg:gap-y-6 justify-between">
+    <header className="w-[100%] sticky   z-[30]    border-b-[0.1px]  border-[#5134173a] top-0  py-4 px-4 sm:px-10 dark:bg-transparent  bg-[#003366]  font-[sans-serif] min-h-[90px]">
+      <section className="flex  flex-wrap items-center  max-lg:gap-y-6 justify-between">
       <div className="w-[180px]">
             <Image 
             src="/logo.png"
@@ -20,17 +21,17 @@ export default function Header() {
       
         </div>
         <div className='flex-1'>
-      <ul className='flex  max-lg:hidden text-white text-[1rem] gap-[3.5rem] cursor-pointer items-center'>
-        <li>Home</li>
-        <li>Community</li>
-        <li>Programs</li>
-        <li>Career Readliness</li>
-        <li>About us</li>
-        <li>Contact Us</li>
+      <ul className='flex  max-lg:hidden text-white text-[1rem] gap-[3rem] cursor-pointer items-center'>
+        <li><MenuLink title={'home'} link={''} isCaret={false}/></li>
+        <li><MenuLink title={'Community'} link={''} isCaret={true}/></li>
+        <li><MenuLink title={'Programs'} link={''} isCaret={true}/></li>
+        <li> <MenuLink title={'Career Readliness'} link={''} isCaret={true}/></li>
+        <li> <MenuLink title={'About us'} link={''} isCaret={false}/></li>
+        <li> <MenuLink title={'Contact Us'} link={''} isCaret={false}/></li>
         <li>
           <Button onClick={()=>dispatch(open())} className='bg-transparent text-base border-white border-[1px] rounded-2xl px-7' >Get Started</Button>
         </li>
-        <li>Login</li>
+        <li><MenuLink title={'Login'} link={''} isCaret={true}/></li>
       </ul>
        </div>
        <div>
