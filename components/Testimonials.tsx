@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function Testimonials() {
   return (
     <section>
-<div className='grid grid-cols-4 mt-6 mb-6 gap-6 '>
+<div className='grid grid-cols-4 max-sm:grid-cols-1 mt-6 mb-6 gap-6 '>
       <div className="bg-white rounded-lg shadow-md p-4">
       <div className="flex ">
         <div className='flex-1'>
