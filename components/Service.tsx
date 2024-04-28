@@ -13,9 +13,9 @@ import { Button } from './ui/button'
 
 export default function Service() {
   return (
-    <div className='mt-6 grid grid-cols-4 gap-[2rem] mb-6'>
-      <div>
-    <Card className="w-[300px] max-h-[28rem]">
+    <div className='mt-6 grid grid-cols-4 max-sm:mx-3 gap-[2rem] mb-6 max-sm:grid-cols-1'>
+      <div >
+    <Card className="w-[300px] max-h-[28rem] max-sm:w-full">
       <CardHeader className="bg-[url('/talks.webp')] bg-cover py-[8.5rem]">
        
       </CardHeader>
@@ -38,7 +38,7 @@ export default function Service() {
     </Card>
     </div>
     <div>
-    <Card className="w-[300px] max-h-[28rem]">
+    <Card className="w-[300px] max-h-[28rem] max-sm:w-full">
       <CardHeader className="bg-[url('/wkshop.webp')] bg-cover py-[8.5rem]">
        
       </CardHeader>
@@ -61,7 +61,7 @@ export default function Service() {
     </Card>
     </div>
     <div>
-    <Card className="w-[300px] max-h-[28rem]">
+    <Card className="w-[300px] max-h-[28rem] max-sm:w-full">
       <CardHeader className="bg-[url('/networking.webp')] bg-cover py-[8.5rem]">
        
       </CardHeader>
@@ -84,7 +84,7 @@ export default function Service() {
     </Card>
     </div>
     <div>
-    <Card className="w-[300px] max-h-[28rem]">
+    <Card className="w-[300px] max-h-[28rem] max-sm:w-full">
       <CardHeader className="bg-[url('/mentor.webp')] bg-cover object-cover py-[8.5rem]">
        
       </CardHeader>

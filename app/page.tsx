@@ -35,11 +35,14 @@ export default function Home() {
       <Value/>
       </div>
      <div className="mt-5">
-      <div className="flex justify-between items-center">
-      <h2 className="text-[#003366] text-4xl font-bold">
+      <div className="flex max-sm:flex-col justify-between items-center">
+        <div className="max-sm:text-center">
+        <h2 className="text-[#003366]  text-4xl font-bold">
         Our Services
         </h2>
-        <Button className="flex gap-2" variant="ghost">View more<MoveRight/></Button>
+        </div>
+      
+        <Button className="flex gap-2 max-sm:hidden" variant="ghost">View more<MoveRight/></Button>
       </div>
      <Service/>
      </div>
