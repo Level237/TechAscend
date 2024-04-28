@@ -50,7 +50,7 @@ export default function MenuLink(props:linkType) {
         <div>
         {props.sub?.map((sub,i)=>(
             <li key={i} className="mt-1 hover:bg-[#6699ff] px-3 py-3">
-                {sub.isBlank===1 ?  <Link  target="_blank" href={sub.link}>{sub.title}</Link> :  <Link   href={sub.link}>{sub.title}</Link>}
+                {sub.isBlank===1 ?  <Link  target="_blank" href={sub.link}>{sub.title}</Link> :  <a   href={sub.link}>{sub.title}</a>}
                </li>
         ))}
         </div>
