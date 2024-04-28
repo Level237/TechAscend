@@ -11,7 +11,7 @@ import { BsInstagram, BsLinkedin } from 'react-icons/bs'
 export default function Footer() {
   return (
     <section>
- <div className='flex px-10 py-5 justify-between mx-[6rem]'>
+ <div className='flex px-10 py-5 max-sm:flex-col max-sm:gap-6 max-sm:mx-0 justify-between mx-[6rem]'>
       <div className='w-56'>
       <Image 
             src="/logo.png"
@@ -20,7 +20,7 @@ export default function Footer() {
             alt="logo tech ascend cameroon"
             />
       </div>
-      <div className='flex justify-between gap-1 flex-1'>
+      <div className='flex max-sm:flex-col max-sm:gap-12 justify-between gap-1 flex-1'>
       <div className='flex flex-col gap-4'>
         <div>
         <h2 className='text-white font-bold'>For Companies</h2>
@@ -132,15 +132,26 @@ export default function Footer() {
     <div className='flex items-center flex-col gap-4 '>
     
     <div>
-        <div className='flex items-center gap-3'>
+        <div className='flex items-center max-sm:mx-5 max-sm:mt-5 gap-3'>
         <Input type='email' placeholder='Your email'/>
-        <Button className='bg-[#ffcc00] px-12 rounded-full text-lg font-light text-black'>Subscribe</Button>
+        <Button className='bg-[#ffcc00] px-12 max-sm:px-3 max-sm:text-sm font-bold rounded-full text-lg  text-black'>Subscribe</Button>
         </div>
    
     </div>
+    <div className=''>
+    <div className='max-sm:flex gap-5 hidden  text-white mr-0'>
+<div><FaFacebookF/></div>
+<div><FaTwitter/></div>
+<div><BsLinkedin/></div>
+<div><BsInstagram/></div>
+<div><FaYoutube/></div>
+<div><FaThreads/></div>
+</div>
+    </div>
+   
     <Separator className='bg-gray-600' />
-<div className='flex items-center gap-36 justify-between'>
-    <div className='flex items-center gap-3'>
+<div className='flex items-center max-sm:flex-col gap-36 max-sm:gap-3 justify-between'>
+    <div className='flex max-sm:flex-col items-center gap-3'>
     <div>
     <p className='text-white'>© 2024 TechAscend. All rights reserved.</p>
 </div>
@@ -161,7 +172,7 @@ export default function Footer() {
 </span>
 </div>
     </div>
-<div className='flex gap-5 text-white mr-0'>
+<div className='flex gap-5 max-sm:hidden  text-white mr-0'>
 <div><FaFacebookF/></div>
 <div><FaTwitter/></div>
 <div><BsLinkedin/></div>
