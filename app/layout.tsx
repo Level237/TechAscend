@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={``}>
-      <main className=" flex-col items-center bg-gradient-to-r from-blue-300 to-slate-50 ">
+      <main className=" flex-col items-center overflow-x-hidden bg-gradient-to-r from-blue-300 to-slate-50 ">
       <Provider store={store}>
         <Header/>
         
