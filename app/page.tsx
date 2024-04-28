@@ -27,7 +27,7 @@ export default function Home() {
       <CardRsv/>
       <div className="mt-36">
        <div className="flex justify-center">
-        <h2 className="text-[#003366] text-4xl font-bold">
+        <h2 className="text-[#003366] max-sm:text-2xl text-4xl font-bold">
         Our Core Values
         </h2>
       
@@ -37,7 +37,7 @@ export default function Home() {
      <div className="mt-5">
       <div className="flex max-sm:flex-col justify-between items-center">
         <div className="max-sm:text-center">
-        <h2 className="text-[#003366]  text-4xl font-bold">
+        <h2 className="text-[#003366] max-sm:text-2xl  text-4xl font-bold">
         Our Services
         </h2>
         </div>
@@ -48,16 +48,16 @@ export default function Home() {
      </div>
      <div className="mt-[5rem] mx-12">
      <div className="text-center">
-      <h2 className="text-[#003366] text-4xl font-bold">
+      <h2 className="text-[#003366] max-sm:text-2xl text-4xl font-bold">
         Our Testimonials
         </h2>
        
       </div>
       <Testimonials/>
      </div>
-     <div className="mt-12 mr-12">
+     <div className="mt-12 mr-12 max-sm:mr-0">
      <div className="text-center">
-      <h2 className="text-[#003366] text-4xl font-bold">
+      <h2 className="text-[#003366]  max-sm:text-2xl text-4xl font-bold">
       Latest from Our Blog
         </h2>
        

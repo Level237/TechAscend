@@ -5,9 +5,9 @@ import { MoveRight } from 'lucide-react'
 
 export default function Blog() {
   return (
-    <div className='grid grid-cols-4 mt-6 gap-[3rem]'>
+    <div className='grid grid-cols-4 max-sm:grid-cols-1 mt-6 gap-[3rem]  max-sm:mx-5'>
       <div className='w-[300px] '>
-    <Card className="w-full rounded-xl ">
+    <Card className="w-full rounded-xl">
       <CardHeader className="bg-[url('/hero1.webp')] bg-cover h-36 rounded-t-xl relative">
        <div className='px-3 py-1 absolute top-5 bg-white rounded-xl'>
         <span className='font-bold text-sm'>
