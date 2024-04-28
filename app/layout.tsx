@@ -19,6 +19,7 @@ export default function RootLayout({
  
   return (
     <html lang="en">
+      <link rel="shortcut icon" href="/logo.png" />
       <body className={``}>
       <main className=" flex-col items-center overflow-x-hidden bg-gradient-to-r from-blue-300 to-slate-50 ">
       <Provider store={store}>
