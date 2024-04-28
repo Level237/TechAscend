@@ -4,20 +4,24 @@ import { Button } from './ui/button'
 import { useDispatch } from 'react-redux';
 import { open } from '@/store/store';
 import MenuLink from './ui/menu-link';
+import Link from 'next/link';
 
 export default function Header() {
   const dispatch = useDispatch();
   return (
     <>
-    <header className="w-[100%] sticky   z-[30]    border-b-[0.1px]  border-[#5134173a] top-0  py-4 px-4 sm:px-10 dark:bg-transparent  bg-[#003366]  font-[sans-serif] min-h-[90px]">
+    <header className="w-[100%] fixed   z-[30]    border-b-[0.1px]  border-[#5134173a] top-0  py-4 px-4 sm:px-10 dark:bg-transparent  bg-[#003366]  font-[sans-serif] min-h-[90px]">
       <section className="flex  flex-wrap items-center  max-lg:gap-y-6 justify-between">
       <div className="w-[180px]">
-            <Image 
+        <Link href={'/'}>
+        <Image 
             src="/logo.png"
             width="60"
             height="60"
             alt="logo tech ascend cameroon"
             />
+        </Link>
+           
       
         </div>
         <div className='flex-1'>
