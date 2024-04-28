@@ -21,7 +21,7 @@ export default function Home() {
     <main className=" flex-col items-center  ">
       
       <Modal/>
-      <section className="mx-[3rem] max-sm:mx-[1.5rem]">
+      <section className="mx-[3rem] max-sm:mx-0">
       <Hero/>
       
       <CardRsv/>
