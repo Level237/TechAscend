@@ -120,7 +120,7 @@ export default function Header() {
              title: 'Skill Workshops', link: 'https://tech-ascend.com/community/skill-Workshops',
              isBlank: 1
            },{
-             title: 'Networking Events', link: 'community/networking-events',
+             title: 'Networking Events', link: '/community/networking-events',
              isBlank: 0
            },{
              title: 'Job Fairs', link: 'https://tech-ascend.com/community/job-fairs',
