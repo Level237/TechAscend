@@ -19,7 +19,7 @@ export default function CardRsv() {
     transition={{ duration:1.5 }}
     exit={{ opacity:0, transition: {duration: 0.5}}}
     className='bg-[#003366] max-sm:relative  max-sm:w-full max-sm:h-[12rem] max-sm:justify-center max-sm:gap-1   h-[87px] mt-12  flex justify-between px-10 items-center gap-3 '>
-     <div className='text-white cursor-pointer max-sm:block max-lg:hidden max-sm:absolute max-sm:top-2 max-sm:right-2'>
+     <div className='text-white cursor-pointer max-sm:block hidden max-sm:absolute max-sm:top-2 max-sm:right-2'>
         <X onClick={() => dispatch(hidden())}/>
       </div>
       <div className='flex justify-center max-sm:flex-col items-center max-sm:gap-1 max-sm:justify-center max-sm:items-center text-white gap-16'>

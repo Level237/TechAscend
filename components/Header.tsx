@@ -22,16 +22,16 @@ export default function Header() {
         </div>
         <div className='flex-1'>
       <ul className='flex  max-lg:hidden text-white text-[1rem] gap-[3rem] cursor-pointer items-center'>
-        <li><MenuLink title={'home'} link={''} isCaret={false}/></li>
-        <li><MenuLink title={'Community'} link={''} isCaret={true}/></li>
-        <li><MenuLink title={'Programs'} link={''} isCaret={true}/></li>
-        <li> <MenuLink title={'Career Readliness'} link={''} isCaret={true}/></li>
+        <li className='group' ><MenuLink title={'home'} link={''} isCaret={false}/></li>
+        <li><MenuLink title={'Community'} link={''} isCaret={true} sub={['Skill Workshops','Networking Events','Job Fairs']}/></li>
+        <li><MenuLink title={'Programs'} link={''} isCaret={true} sub={['Frontend','Backend','DevOps', 'Data Science']}/></li>
+        <li> <MenuLink title={'Career Readliness'} link={''} isCaret={true} sub={['Jobs','Mentorship Programs','Career Placement']}/></li>
         <li> <MenuLink title={'About us'} link={''} isCaret={false}/></li>
         <li> <MenuLink title={'Contact Us'} link={''} isCaret={false}/></li>
         <li>
           <Button onClick={()=>dispatch(open())} className='bg-transparent text-base border-white border-[1px] rounded-2xl px-7' >Get Started</Button>
         </li>
-        <li><MenuLink title={'Login'} link={''} isCaret={true}/></li>
+        <li><MenuLink title={'Login'} link={''} isCaret={true} sub={['For Clients','For Talents','For Students']}/></li>
       </ul>
        </div>
        <div>
