@@ -1,20 +1,20 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { Button } from './ui/button'
-import { useDispatch } from 'react-redux';
-import { open } from '@/store/store';
+import { useDispatch, useSelector } from 'react-redux';
+import store, { isShow, open } from '@/store/store';
 import MenuLink from './ui/menu-link';
 import Link from 'next/link';
 import { X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 
+
 export default function Header() {
-  const [hideHeader,setHideHeader]=useState(false)
+  
+  const hideHeader = useSelector((state:any) => state.headerSlice.isVisible);
   const dispatch = useDispatch();
 
-  const handleShowHeader=()=>{
-    setHideHeader(!hideHeader)
-  }
+
   return (
     <>
     <header className="w-[100%] fixed   z-[900]    border-b-[0.1px]  border-[#5134173a] top-0  py-4 px-4 sm:px-10 dark:bg-transparent  bg-[#003366]  font-[sans-serif] min-h-[90px]">
@@ -85,7 +85,7 @@ export default function Header() {
       </ul>
        </div>
        <div>
-        {hideHeader ? <X onClick={handleShowHeader} className='text-white w-7 h-7"'/> :<button onClick={handleShowHeader}  id="toggle" className='lg:hidden ml-auto'>
+        {hideHeader ? <X onClick={()=>dispatch(isShow())} className='text-white w-7 h-7"'/> :<button onClick={()=>dispatch(isShow())}  id="toggle" className='lg:hidden ml-auto'>
             <svg className="w-7 h-7" fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"

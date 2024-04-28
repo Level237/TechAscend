@@ -13,6 +13,18 @@ const RsvpSlice = createSlice({
     },
   });
 
+  const headerSlice=createSlice({
+    name:'header',
+    initialState:{
+      isVisible:false
+    },
+    reducers:{
+      isShow:(state)=>{
+        state.isVisible=!state.isVisible
+      
+      }
+    }
+  })
   const StartedSlice=createSlice({
     name: 'start',
     initialState: {
@@ -32,11 +44,13 @@ const RsvpSlice = createSlice({
   const store = configureStore({
     reducer: {
         RsvpSlice: RsvpSlice.reducer,
-        StartedSlice:StartedSlice.reducer
+        StartedSlice:StartedSlice.reducer,
+        headerSlice:headerSlice.reducer
     },
   });
 
   export const { hidden } = RsvpSlice.actions;
   export const { open,close } = StartedSlice.actions;
+  export const { isShow } = headerSlice.actions
 
 export default store;
