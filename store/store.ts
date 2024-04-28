@@ -37,6 +37,7 @@ const RsvpSlice = createSlice({
       },
       open:(state)=>{
         state.isVisible=true
+        
       }
     },
   });

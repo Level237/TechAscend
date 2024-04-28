@@ -9,10 +9,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import Image from 'next/image'
+import Modal from '@/components/Modal'
 export default function page() {
   return (
     <div className='bg-white pb-10'>
       <section className={`relative mx-10 max-sm:mt-[5rem] mt-[5rem]  max-sm:w-full max-sm:mx-0 max-sm:py-4 h-[68vh] bg-center bg-cover bg-[url('/mentor.webp')] `}>
+      <Modal/>
         <div className="flex items-center  justify-center absolute inset-0 bg-[#003366] w-100 opacity-[0.9]">
           
         </div>
